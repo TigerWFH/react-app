@@ -41,19 +41,19 @@ class MyApp extends Component {
 }
 
 const elem = (
-  // <StrictMode>
-  <Router>
-    <MyApp>
-      <Suspense fallback={<div>Loading</div>}>
-        <Routes>
-          <Route path={'/'} element={<Home />}></Route>
-          <Route path={'/about'} element={<About />}></Route>
-          <Route path={'/other'} element={<Other />}></Route>
-        </Routes>
-      </Suspense>
-    </MyApp>
-  </Router>
-  // </StrictMode>
+  <StrictMode>
+    <Router>
+      <MyApp>
+        <Suspense fallback={<div>Loading</div>}>
+          <Routes>
+            <Route path={'/'} element={<Home />}></Route>
+            <Route path={'/about'} element={<About />}></Route>
+            <Route path={'/other'} element={<Other />}></Route>
+          </Routes>
+        </Suspense>
+      </MyApp>
+    </Router>
+  </StrictMode>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
