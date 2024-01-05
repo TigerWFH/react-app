@@ -12,7 +12,7 @@ import { Home } from './home.jsx';
 
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/css/v4-shims.css';
-import 'amis/lib/themes/antd.css';
+import 'amis/lib/themes/cxd.css';
 import 'amis/lib/helper.css';
 import 'amis/sdk/iconfont.css';
 
@@ -41,19 +41,19 @@ class MyApp extends Component {
 }
 
 const elem = (
-  <StrictMode>
-    <Router>
-      <MyApp>
-        <Suspense fallback={<div>Loading</div>}>
-          <Routes>
-            <Route path={'/'} element={<Home />}></Route>
-            <Route path={'/about'} element={<About />}></Route>
-            <Route path={'/other'} element={<Other />}></Route>
-          </Routes>
-        </Suspense>
-      </MyApp>
-    </Router>
-  </StrictMode>
+  // <StrictMode>
+  <Router>
+    <MyApp>
+      <Suspense fallback={<div>Loading</div>}>
+        <Routes>
+          <Route path={'/'} element={<Home />}></Route>
+          <Route path={'/about'} element={<About />}></Route>
+          <Route path={'/other'} element={<Other />}></Route>
+        </Routes>
+      </Suspense>
+    </MyApp>
+  </Router>
+  // </StrictMode>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
