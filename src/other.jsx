@@ -177,10 +177,7 @@ const json = {
                               type: 'textarea',
                               name: 'uidsDec',
                               label: '',
-                              validateOnChange: true,
-                              validations: {
-                                validationsDec: true
-                              }
+                              validateOnChange: true
                             }
                           ]
                         }
