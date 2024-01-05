@@ -7,7 +7,6 @@ const json = {
   id: 'myCasePool_ID',
   type: 'page',
   data: {
-    // LOOK: true,
     EXPORT: true,
     CASE_APPLY: true,
     CASE_PROGRESS_IMPORT: true,
@@ -91,16 +90,6 @@ const json = {
                               }
                             }
                           }
-                          // {
-                          //   actionType: "custom",
-                          //   script: (context, doAction, e) => {
-                          //     setFormValue({
-                          //       ...formValue,
-                          //       multipleData: "",
-                          //       uid: "",
-                          //     });
-                          //   },
-                          // },
                         ]
                       }
                     }
@@ -150,20 +139,6 @@ const json = {
                                     }
                                   }
                                 }
-                                // {
-                                //   actionType: 'custom',
-                                //   script: (context, doAction, e) => {
-                                //     const value = e.data;
-                                //     const uid = value?.uidsDec
-                                //       ?.split('\n')
-                                //       ?.map((i) => i?.trim());
-
-                                //     setFormValue({
-                                //       ...formValue,
-                                //       uid
-                                //     });
-                                //   }
-                                // }
                               ]
                             }
                           },
@@ -255,15 +230,11 @@ const json = {
 };
 
 class Other extends Component {
-  constructor(props) {
-    super(props);
-    console.log('wfh---other---constructor');
-  }
   render() {
     return (
       <>
         <h1>other</h1>
-        {/* <LazyCom /> */}
+        <LazyCom />
         <div>{render(json, {}, {})}</div>
       </>
     );
